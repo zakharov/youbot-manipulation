@@ -1,0 +1,27 @@
+<package>
+  <description brief="youbot_task_manager">
+
+     youbot_task_manager
+
+  </description>
+  <author>Constantinos Lantos</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/youbot_task_manager</url>
+  
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="std_msgs"/>
+  <depend package="actionlib"/>
+  <depend package="control_msgs"/>
+  <depend package="trajectory_msgs"/>
+  <depend package="kinematics_msgs"/>
+  <depend package="tf"/>
+  <depend package="control_msgs"/>
+  <depend package="brics_actuator"/>
+  <depend package="planning_environment"/>
+  <depend package="visualization_msgs"/>
+
+</package>
+
+

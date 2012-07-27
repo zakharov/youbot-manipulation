@@ -1,0 +1,18 @@
+To start the youbot arm navigation (either on PC or on youbot):
+roslaunch youbot_oodl driver
+roslaunch youbot_oodl joint_publisher
+roslaunch youbot_arm_navigation youbot_arm_navigation.launch
+
+Now you have all the packages needed running.
+
+To prerform a predifined sequence use (either on PC or on youbot): rosrun youbot_task_manager task_manager
+
+To start the ROS warehouse (only on PC): roslaunch youbot_arm_navigation planning_warehouse_viewer_real_gui.launch
+Next you click accept.
+Next you click New.
+And finally you select File->New motion plan and then ok
+In rviz you click Interact so you can move the target position around.
+When you want to plan and execute a trajectory click:
+Plan new trajectory
+Filter trajectory
+Execute trajectory on robot
