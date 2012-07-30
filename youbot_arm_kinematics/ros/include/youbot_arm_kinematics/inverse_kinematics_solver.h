@@ -125,12 +125,6 @@ class InverseKinematicsSolver : public KDL::ChainIkSolverPos
 				KDL::JntArray &q_out,
 				const double &timeout);
 
-		int CartToJntSearch(const KDL::JntArray& q_in,
-				const KDL::Frame& p_in,
-				const double& consistency_limit,
-				KDL::JntArray &q_out,
-				const double &timeout);
-
 		/**
 		 * @brief A method to get chain information about the serial chain that the IK operates on
 		 * @param response This class gets populated with information about the joints that IK operates on, including joint names and limits.
@@ -154,20 +148,6 @@ class InverseKinematicsSolver : public KDL::ChainIkSolverPos
 				arm_navigation_msgs::ArmNavigationErrorCodes &error_code,
 				const boost::function<void(const KDL::JntArray&,const KDL::Frame&,arm_navigation_msgs::ArmNavigationErrorCodes &)> &desired_pose_callback,
 				const boost::function<void(const KDL::JntArray&,const KDL::Frame&,arm_navigation_msgs::ArmNavigationErrorCodes &)> &solution_callback);
-
-		int CartToJntSearch(const KDL::JntArray& q_in,
-				const KDL::Frame& p_in,
-				KDL::JntArray &q_out,
-				const double &timeout,
-				const double& consistency_limit,
-				arm_navigation_msgs::ArmNavigationErrorCodes &error_code,
-				const boost::function<void(const KDL::JntArray&,const KDL::Frame&,arm_navigation_msgs::ArmNavigationErrorCodes &)> &desired_pose_callback,
-				const boost::function<void(const KDL::JntArray&,const KDL::Frame&,arm_navigation_msgs::ArmNavigationErrorCodes &)> &solution_callback);
-
-
-		unsigned int getFreeAngle() const;
-
-		void setFreeAngle(const unsigned int& free_angle);
 
 
 	private: // functions
