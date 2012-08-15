@@ -16,6 +16,6 @@
 	<include file="$(find youbot_arm_navigation)/ros/launch/collision_proximity.launch" />
 	<include file="$(find youbot_arm_navigation)/ros/launch/collision_proximity_planning.launch" />
 	<!-- <include file="$(find youbot_arm_navigation)/ros/launch/chomp_planning.launch" /> -->
-	<include file="$(find youbot_joint_trajectory_action)/ros/launch/youbot_joint_trajectory_action.launch" />
+	
 
 </launch>
